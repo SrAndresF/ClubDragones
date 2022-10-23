@@ -7,7 +7,7 @@ import {BiMap} from 'react-icons/bi'
 import { server } from "../config";
 export default function precios({products}:{products:any}) {
   
-  console.log(products)
+
   return (
     <Main title="Precios">
       <motion.div className="mt-14  bg-principal w-full h-128 sm:h-60 text-white flex sm:flex-row flex-col justify-around items-center"
@@ -31,7 +31,7 @@ export default function precios({products}:{products:any}) {
             <p className="ml-5 sm:ml-0" > mensualidad de 60.000$ inscripcion gratuita</p>
           </div>
         </motion.div>
-        
+
         <motion.div className="bg-white w-full h-128 sm:h-60 text-black flex justify-around flex-col-reverse sm:flex-row items-center"
         initial={{y: -300}}
         animate={{y:0}}
@@ -59,16 +59,18 @@ export default function precios({products}:{products:any}) {
         </div>
         <div>
           <ul className="ml-10 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
-              <Link href={`/shop/123`} key="tot" >
-              <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key="tot" >
+            {products.map((c:any)=>(
+              <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title} >
+              <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.title} >
                 <div>
-                  <Image src={`/img.png`} width={150 * 2} height={110 * 2} layout="intrinsic" alt="e" />
+                  <Image src={`/${c.img}`} width={150 * 2} height={110 * 2} layout="intrinsic" alt={c.title} />
                 </div>
-                <h2 className=" text-base font-semibold" ></h2>
-                <p className=" text-base" ></p>
-                <p className=" text-base font-semibold" >valor: </p>
+                <h2 className=" text-base font-semibold" >{c.title}</h2>
+                <p className=" text-base" >{c.description}</p>
+                <p className=" text-base font-semibold" >valor: {c.price}</p>
               </li>
               </Link>
+            ))}
           </ul>
         </div>
 
@@ -116,24 +118,17 @@ export default function precios({products}:{products:any}) {
           <Image className="rounded-full object-cover" alt="desistir" src="/img/desistir.png" width={260} height={260} layout="intrinsic" />
           </div>
         </motion.div>
-        <div className="bg-black">
-          {products?.map((c:any)=>(
-            <div>{c.title}</div>
-          ))}
-        </div>
+
     </Main>
   )
 }
 
-
-
 export async function getStaticProps() {
-  const res = await fetch('https://clubdragones-iu4o3ukow-srandresf.vercel.app/api/products')
-  const products = await res.json()
-
+  const res = await axios.get(`https://clubdragones-iu4o3ukow-srandresf.vercel.app//api/products`)
   return {
     props: {
-      products,
-    },
+      products: res.data
+    }, 
   }
 }
+
