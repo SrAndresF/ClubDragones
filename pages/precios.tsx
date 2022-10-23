@@ -7,7 +7,7 @@ import {BiMap} from 'react-icons/bi'
 import { server } from "../config";
 export default function precios({products}:{products:any}) {
   
-
+  console.log(products)
   return (
     <Main title="Precios">
       <motion.div className="mt-14  bg-principal w-full h-128 sm:h-60 text-white flex sm:flex-row flex-col justify-around items-center"
@@ -122,3 +122,14 @@ export default function precios({products}:{products:any}) {
 }
 
 
+
+export async function getStaticProps() {
+  const res = await fetch('https://clubdragones-iu4o3ukow-srandresf.vercel.app/api/products')
+  const products = await res.json()
+
+  return {
+    props: {
+      products,
+    },
+  }
+}
