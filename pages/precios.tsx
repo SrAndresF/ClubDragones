@@ -31,7 +31,7 @@ export default function precios({products}:{products:any}) {
             <p className="ml-5 sm:ml-0" > mensualidad de 60.000$ inscripcion gratuita</p>
           </div>
         </motion.div>
-
+        
         <motion.div className="bg-white w-full h-128 sm:h-60 text-black flex justify-around flex-col-reverse sm:flex-row items-center"
         initial={{y: -300}}
         animate={{y:0}}
@@ -116,7 +116,11 @@ export default function precios({products}:{products:any}) {
           <Image className="rounded-full object-cover" alt="desistir" src="/img/desistir.png" width={260} height={260} layout="intrinsic" />
           </div>
         </motion.div>
-
+        <div className="bg-black">
+          {products?.map((c:any)=>(
+            <div>{c.title}</div>
+          ))}
+        </div>
     </Main>
   )
 }
