@@ -58,6 +58,7 @@ export default function precios({products}:{products:any}) {
           </div>
         </div>
         <div>
+          <div>Hola Andres :){products}</div>
           <ul className="ml-10 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
             {products.map((c:any)=>(
               <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title} >
