@@ -64,7 +64,7 @@ export default function precios({products}:{products:any}) {
               <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title} >
               <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.title} >
                 <div>
-                  <Image src={`/${c.img}`} width={150 * 2} height={110 * 2} layout="intrinsic" alt={c.title} />
+                  <Image src={`/img/uniforme.png`} width={150 * 2} height={110 * 2} layout="intrinsic" alt={c.title} />
                 </div>
                 <h2 className=" text-base font-semibold" >{c.title}</h2>
                 <p className=" text-base" >{c.description}</p>
