@@ -52,7 +52,7 @@ export default function precios({products}:{products:any}) {
           </div>
         </motion.div>
         <div className="bg-principal w-full  shadow-2xl">
-          <h3 className="text-center font-semibold text-3xl text-white py-5">Uniformes</h3>
+          <h3 className="text-center font-semibold text-3xl text-white py-5">Unifor</h3>
           <div className="absolute -mt-10 left-5 sm:left-20">
           <Image src="/img/uniformes.jpg" alt="uniformes" className=" rounded-full" width={899 / 7} height={899 / 7} layout="intrinsic" />
           </div>
