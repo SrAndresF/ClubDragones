@@ -124,7 +124,7 @@ export default function precios({products}:{products:any}) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get(`https://clubdragones-iu4o3ukow-srandresf.vercel.app//api/products`)
+  const res = await axios.get(`${server}/api/products`)
   return {
     props: {
       products: res.data
