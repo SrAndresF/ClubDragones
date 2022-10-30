@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion"
 
-export default function acercaDe() {
+export default function acercaDe(){
   return (
     <Main title="Acerca De">
       <div className="grid grid-cols-1 grid-rows-3 grid-flow-row">

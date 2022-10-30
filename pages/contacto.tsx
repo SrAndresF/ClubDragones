@@ -4,7 +4,6 @@ import {BiMap} from 'react-icons/bi'
 export default function contacto() {
   return (
     <Main title="Contacto">
-      
         <div className="grid grid-cols-1 grid-flow-row lg:md:grid-cols-2 w-full">
         <div className="flex flex-col justify-center items-center text-black  w-full sm:w-1/2 rounded-2xl md:ml-5">
           <h3 className="font-bold text-5xl mt-7 mb-3">Contáctanos:</h3>
@@ -23,7 +22,7 @@ export default function contacto() {
         </div>
         </div>
       </div>
-      <form action="https://formsubmit.co/your@email.com" className="flex flex-col justify-center items-center text-black mt-20 w-full sm:w-1/2 rounded-2xl">
+      <form action="https://formsubmit.co/theisandresfgv@gmail.com" className="flex flex-col justify-center items-center text-black mt-20 w-full sm:w-1/2 rounded-2xl">
         <h3 className="font-bold text-5xl  mb-3">
         Escribanos:
         </h3>
