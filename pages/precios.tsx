@@ -8,7 +8,9 @@ import { loadProducts } from "../lib/loadProducts";
 
 const MainDinamyc = dynamic(()=> import('../components/layout/Main'),{ 
   suspense:true,
-  })
+  });
+
+  
 export default function precios({products}:{products:any}){
   return (
     <Suspense fallback={<div className="flex justify-center items-center transform "><div className=" inline-block w-44 h-44 m-4 rounded-full bg-ball animate-bounce "></div></div>} >
