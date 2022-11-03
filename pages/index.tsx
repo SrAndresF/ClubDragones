@@ -3,7 +3,8 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Slider from "../components/Slider"
-const Home = () => {
+import { NextPage } from "next"
+const Home : NextPage = () => {
 
   return (
     <Main title="Bienvenido">

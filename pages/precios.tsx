@@ -64,9 +64,9 @@ export default function precios({products}:{products:any}){
           </div>
         </div>
         <div>
-          <ul className="ml-10 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
+          <ul className=" lg:mb-0 md:sm:mb-44 ml-10 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
             {products.map((c:any)=>(
-              <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title} >
+              <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title}  >
               <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.title} >
                 <div>
                   <Image src={`/${c.img}`} width={150 * 2} height={110 * 2} layout="intrinsic" alt={`${c.title}`} />
