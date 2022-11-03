@@ -5,6 +5,7 @@ import { Suspense } from 'react'
 import dynamic from "next/dynamic";
 import {BiMap} from 'react-icons/bi'
 import { loadProducts } from "../lib/loadProducts";
+import { GetStaticProps } from "next";
 
 const MainDinamyc = dynamic(()=> import('../components/layout/Main'),{ 
   suspense:true,
@@ -128,7 +129,7 @@ export default function precios({products}:{products:any}){
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const products = await loadProducts()
   return {
     props: {
