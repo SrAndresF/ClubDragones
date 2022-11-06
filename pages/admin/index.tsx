@@ -1,8 +1,6 @@
 import Main from "../../components/layout/Main";
 import { Menu, Transition } from '@headlessui/react'
-
-import axios from "axios";
-import { server } from "../../config";
+import { loadProducts } from "../../lib/loadProducts";
 
 export default function admin({products}:{products:any}) {
 
@@ -69,10 +67,10 @@ export const getServerSideProps = async (ctx: any) => {
       },
     }
   }
-  const products = await axios.get(`${server}/api/products`);
+  const products = await loadProducts();
 
   return{
     props:{
-      products: products.data,
+      products: products,
     }
   }}
