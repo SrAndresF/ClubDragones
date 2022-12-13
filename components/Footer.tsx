@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-
+import Link from "next/link";
 function Footer() {
 	return (
 		<>
@@ -19,16 +19,16 @@ function Footer() {
 					<ul>
 						<p className="text-white font-bold text-2xl pb-4">Productos</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Uniformes
+							<Link href="/precios"><a>Uniformes</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Servicios
+						<Link href="/precios"><a>Servicios</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Entrenamientos
+						<Link href="/precios"><a>Entrenamientos</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Precio por dia
+						<Link href="/precios"><a>Personalizadas</a></Link>
 						</li>
 					</ul>
 				</div>
@@ -36,13 +36,13 @@ function Footer() {
 					<ul>
 						<p className="text-white font-bold text-2xl pb-4">Compañia</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Acerca de
+						<Link href="/acerca-de"><a>Acerca de</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Precios
+						<Link href="/precios"><a>Precios</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Contacto
+						<Link href="/contacto"><a>Contacto</a></Link>
 						</li>
 						
 					</ul>
@@ -51,10 +51,16 @@ function Footer() {
 					<ul>
 						<p className="text-white font-bold text-2xl pb-4">Soporte</p>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
-							Contacto
+						<Link href="/contacto"><a>Contacto</a></Link>
 						</li>
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
 						+57 321-540-0876
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
+						<Link href="/pagos"><a>Paga tú mensualidad</a></Link>
+						</li>
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-red-600 cursor-pointer">
+						<Link href="/politicas-devoluciones"><a>Politicas de devoluciones y rembolsos</a></Link>
 						</li>
 						
 					</ul>

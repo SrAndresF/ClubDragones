@@ -1,15 +1,22 @@
 import Main from "../components/layout/Main";
 import {BiMap} from 'react-icons/bi'
+import Link from "next/link";
+import { server } from "../config";
 
 export default function contacto() {
   return (
     <Main title="Contacto">
+        <div className="mt-20 items-center flex justify-center ">
+          <h2 className="font-bold text-5xl  mb-12 md:mb-5 text-center ">Paga la mensualidad</h2>
+          <button className=" bg-secondary w-44 h-10 rounded-lg  hover:bg-opacity-80  absolute  mt-24" >
+          <Link href="/pagos" className="bg-secondary  rounded-2xl h-10 w-72 text-center   "><a className="font-medium  text-lg mt-5 mb-7 text-white">Pagar</a></Link></button>
+        </div>
         <div className="grid grid-cols-1 grid-flow-row lg:md:grid-cols-2 w-full">
         <div className="flex flex-col justify-center items-center text-black  w-full sm:w-1/2 rounded-2xl md:ml-5">
           <h3 className="font-bold text-5xl mt-7 mb-3">Contáctanos:</h3>
           <div>
           <div>
-          <h4 className="font-mediun text-2xl mt-7 mb-3 ml-5 sm:ml-0" >Telefono:</h4>
+          <h4 className="font-mediun text-2xl mt-7 mb-3 ml-5 sm:ml-0" >Teléfono:</h4>
           <p className="   font-light text-mediun  rounded-2xl  text-black   ml-5 sm:ml-0" >+57 321-540-0876</p>
           </div>
           <div>
@@ -18,11 +25,10 @@ export default function contacto() {
           </div>
           <div>
           <h4 className="font-mediun text-2xl mt-7 mb-3 ml-5 sm:ml-0" >Ubicacion:</h4>
-          <p className="  font-light text-mediun  rounded-2xl  text-black    ml-5 sm:ml-0" >Carrera 44 # 13-99 Cali, Colombia</p>
         </div>
         </div>
       </div>
-      <form action="https://formsubmit.co/theisandresfgv@gmail.com" className="flex flex-col justify-center items-center text-black mt-20 w-full sm:w-1/2 rounded-2xl">
+      <form action="https://formsubmit.co/clubdragones01@gmail.com" method="POST" className="flex flex-col justify-center items-center text-black mt-20 w-full sm:w-1/2 rounded-2xl">
         <h3 className="font-bold text-5xl  mb-3">
         Escribanos:
         </h3>
@@ -31,7 +37,7 @@ export default function contacto() {
         <textarea name="Descripción"  placeholder="Descripcion" className=" w-72 h-44 text-center rounded-2xl outline-none bg-gray-200  placeholder-gray-600 " ></textarea>
         <button className="bg-secondary  rounded-2xl text-center font-medium h-10 w-72 text-lg mt-5 mb-7 text-white hover:bg-opacity-80 ">Enviar</button>
 
-        <input type="hidden" name="_next" value="http://dragones.vercel.app/contacto" />
+        <input type="hidden" name="_next" value={`${server}contacto`} />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_subject" value="Dragones-Pregunta Pagina Web!!" />
         <input type="text" name="_honey" style={{'display':'none'}} />

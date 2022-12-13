@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Main from '../../components/layout/Main'
 import axios from 'axios';
-import { server } from '../../config';
 export default function Login() {
   
   const [username, setUsername] = useState<any | null >(null);
@@ -13,7 +12,7 @@ export default function Login() {
   const handleClick = async (e: any) =>{
     e.preventDefault()
     try {
-      await axios.post(`${server}/api/login`, {
+      await axios.post(`https://clubdragones.vercel.app/api/login`, {
         username,
         password,
       });
