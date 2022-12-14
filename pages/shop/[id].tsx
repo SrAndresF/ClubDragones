@@ -31,7 +31,7 @@ export default function Shop({product, products}:{product:any, products:any}) {
                 </div>
                 <div className="bg-[#25D366] flex flex-row w-max items-center justify-center rounded-lg p-2 text-white hover:bg-[#25FF77] cursor-pointer mb-3 md:mb-0 ">
                 <BsWhatsapp className="text-white " />
-                <a href={`https://wa.me/573215400876?text=Hola, estoy interesado en: °${product.data.title}° con precio: °${product.data.price}° Url: https://clubdragones${router.asPath}`} target="_blank" rel="noopener noreferrer" >Comprar por whatsapp</a>
+                <a href={`https://wa.me/573215400876?text=Hola, estoy interesado en: °${product.data.title}° con precio: °${product.data.price}° Url: https://clubdragones${router.asPath}.com`} target="_blank" rel="noopener noreferrer" >Comprar por whatsapp</a>
                 </div>
                 
               </div>

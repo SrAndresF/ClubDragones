@@ -67,7 +67,7 @@ export default function precios({products}:{products:any}){
         <div>
           <ul className=" lg:mb-0 md:sm:mb-44 ml-7 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
             {products.map((c:any)=>(
-              <Link href={`/shop/${c.data.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title}  >
+              <Link href={`/shop/${c.data.title.toLowerCase().replace(/\s/g, "-")}`} key={c.data.title}  >
               <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.data.title} >
                 <div>
                   <img src={`${c.data.img}`} width={150 * 2} height={110 * 2}  alt={`${c.title}`} />
@@ -108,7 +108,7 @@ export default function precios({products}:{products:any}){
         transition={{duration: 0.5}}>
         <div className="text-start w-full sm:w-1/3  sm:mx-0 sm:mr-20">
           <h2 className=" font-semibold text-center text-2xl">Realiza tus pagos aquí!!!</h2>
-          <button className=" bg-secondary w-44 h-10 rounded-lg  hover:bg-opacity-80  absolute  mt-24" >
+          <button className=" bg-secondary w-44 h-10 rounded-lg  hover:bg-opacity-80  absolute  mt-24 ml-7 md:ml-20" >
           <Link href="/pagos" className="bg-secondary  rounded-2xl h-10 w-72 text-center   "><a className="font-medium  text-lg mt-5 mb-7 text-white">Pagar</a></Link></button>
           <p className=" text-md sm:ml-0 ml-5">Otras formas de pagar tú mensualidad.</p>
           <ul className=" list-disc text-start ml-5 sm:ml-0">

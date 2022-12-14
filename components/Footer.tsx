@@ -68,7 +68,7 @@ function Footer() {
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-logo-white">
 				<h1 className=" text-gray-800 font-semibold">
-					© 2022 All rights reserved | Build by {"AndresG"}
+					<a href="https://andresg.vercel.app/" target="_blank" rel="noopener noreferrer" >© 2022 All rights reserved | Build by {"AndresG"}</a>
 					
 				</h1>
 			</div>
