@@ -196,7 +196,7 @@ export default function Admin({products}:{products:any}) {
 
             </div>
               <h3 className=" font-bold text-2xl lg:text-3xl  mb-4">Uniformes</h3>
-              <div className="grid grid-cols-3 gap-10 grid-flow-row mb-7">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 grid-flow-row mb-7">
               {products.map((c:any)=>(
               <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-44" key={c.data.title} >
                 
