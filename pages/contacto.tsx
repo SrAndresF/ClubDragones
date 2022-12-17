@@ -6,10 +6,9 @@ import { server } from "../config";
 export default function contacto() {
   return (
     <Main title="Contacto">
-        <div className="mt-20 items-center flex justify-center ">
-          <h2 className="font-bold text-5xl  mb-12 md:mb-5 text-center ">Paga la mensualidad</h2>
-          <button className=" bg-secondary  rounded-lg  hover:bg-opacity-80  absolute  mt-24 px-10 py-2" >
-          <Link href="/pagos" className="bg-secondary  rounded-2xl text-center   "><a className="font-medium  text-lg mt-5 mb-7 text-white">Pagar</a></Link></button>
+        <div className="mt-20 items-center flex justify-center flex-col">
+          <h2 className="font-bold text-5xl  mb-2 md:mb-2 text-center ">Paga la mensualidad</h2>
+          <Link href="/pagos" ><a className="font-medium  text-lg mt-2 mb-3 bg-secondary px-4 py-2 rounded-lg text-white">Pagar</a></Link>
         </div>
         <div className="grid grid-cols-1 grid-flow-row lg:md:grid-cols-2 w-full">
         <div className="flex flex-col justify-center items-center text-black  w-full sm:w-1/2 rounded-2xl md:ml-5">

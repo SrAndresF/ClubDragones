@@ -11,7 +11,8 @@ module.exports = {
         "secondary" : "#E4A603",
         "ball" : "#F54F03",
         "logo-black" : "#151517",
-        "logo-white" : "#EDE6E3"
+        "logo-white" : "#EDE6E3",
+        "link": "#2200CC"
       },
       spacing: {
         '128': '32rem',

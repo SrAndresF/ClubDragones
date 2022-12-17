@@ -28,10 +28,7 @@ const Home : NextPage = () => {
           animate={{x:0}}
           transition={{duration:0.5}}
           className="text-white font-light text-lg mt-3">La primera clase es 100% gratis, además <br /> contamos con 2 sedes así que, no <br /> esperes más e inscríbete</motion.p>
-          <motion.button className=" bg-secondary w-36 h-14 md:w-44 md:h-14 rounded-lg md:rounded-2xl mt-3 mb-20 hover:translate-x-2 hover:translate-y-2 hover:bg-opacity-90" initial={{ x: 300, scale: 0.5 }}
-          animate={{ scale: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          ><Link href="/contacto"><a className=" text-lg justify-center items-center text-center flex text-white font-light">¡Inscribete Aquí!</a></Link></motion.button>
+          <Link href="/contacto"><a className="bg-secondary w-36 h-14 md:w-44 md:h-14 rounded-lg md:rounded-2xl mt-3 mb-20 hover:translate-x-2 hover:translate-y-2 hover:bg-opacity-90 text-lg justify-center items-center text-center flex text-white font-light">¡Inscribete Aquí!</a></Link>
         </div>
         </Slider>
         </motion.div>
@@ -50,9 +47,7 @@ const Home : NextPage = () => {
       <li>La honestidad</li>
       <li>La solidaridad</li>
       </ul>
-      <button className=" bg-secondary w-44 h-10 rounded-lg ml-8 sm:ml-20 hover:bg-opacity-80" >
-        <Link href="/contacto"><a className="text-white">Comenzar</a></Link>
-      </button>
+      <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
       </div>
       <div className=" -mt-32 md:-mt-0 relative md:absolute ml-3 sm:ml-3 md:ml-0   sm:top-full top-full md:top-full lg:top-full-2 sm:right-0 bg-principal rounded-full w-96 h-96  md:w-96 md:h-96 lg:w-128 lg:h-128 -z-10">
         <div className="absolute right-20 sm:right-0 md:right-20 top-28 lg:-rotate-6  z-0">
@@ -77,9 +72,7 @@ const Home : NextPage = () => {
       El miedo, que desaparece gracias al amor; <br />  pero el amor nos da miedo.
       </p>
       
-      <button className=" bg-secondary w-44 h-10 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-10" >
-        <Link href="/contacto"><a className="text-white">Comenzar</a></Link>
-      </button>
+      <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
       </div>
       <div className="flex md:ml-20  md:w-1/3 lg:w-1/2 bg-principal  h-screen -mt-128 sm:-mt-0">
         <div className="flex flex-row flex-flow justify-center items-center">

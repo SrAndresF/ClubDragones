@@ -6,20 +6,21 @@ export default function handler(req:NextApiRequest, res: NextApiResponse) {
     {
     "nombreCompleto": "Andres",
     "cc": 1105370878,
-    "nombreCompletoDelPadre": "",
-    "celularDelPadre": "",
-    "nombreCompletoDeLaMadre": "",
-    "celularDeLaMadre": "",
-    "¿enCasoDeEmergenciaAQuienLlamar?": "",
-    "númeroTelefónicoEnCasoDeEmergencia": "",
-    "dirección": "",
-    "fechaDeNacimiento": "",
-    "eps": "",
-    "enfermedad": "",
-    "tipoDeSangre": "",
-    "siCuentasConUnaEnfermedad, ¿quéTipoDeEnfermedadTienes? ¿utilizasMedicamentos? ¿cuálesSon?": "",
-    "¿cuálEsTuNúmeroDeUniforme?": "",
+    "nombreCompletoDelPadre": "sad",
+    "celularDelPadre": 3144123,
+    "nombreCompletoDeLaMadre": "asdsa",
+    "celularDeLaMadre": 21321,
+    "¿enCasoDeEmergenciaAQuienLlamar?": "mama",
+    "númeroTelefónicoEnCasoDeEmergencia": 31231,
+    "dirección": "dsasadsa",
+    "fechaDeNacimiento": "12/12/2022",
+    "eps": "Sanitas",
+    "enfermedad": "Si",
+    "tipoDeSangre": "A+",
+    "siCuentasConUnaEnfermedad, ¿quéTipoDeEnfermedadTienes? ¿utilizasMedicamentos? ¿cuálesSon?": 321,
+    "¿cuálEsTuNúmeroDeUniforme?": 9,
     "mensajeWhatsaap": "Enviar Mensaje",
+    "pagoInscripcion": "x",
     "id": 2
     },
     {
@@ -916,5 +917,4 @@ export default function handler(req:NextApiRequest, res: NextApiResponse) {
     "id": 49
     }
     ]
-    })
-}
+    })}

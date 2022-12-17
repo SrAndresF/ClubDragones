@@ -26,7 +26,7 @@ export default function Shop({product, products}:{product:any, products:any}) {
                 <h3 className=" text-base font-semibold" > {product.data.title} </h3>
                 <p className=" text-base" >{product.data.description}</p>
                 <p className=" text-base font-semibold" >valor: co${product.data.price}</p>
-                <Link href="/politicas-devoluciones"><a className="text-blue-300 border-b-2 border-blue-300 mb-3">Politica de devoluciones</a></Link>
+                <Link href="/politicas-devoluciones"><a className="text-link border-b-2 border-link mb-3">Politica de devoluciones</a></Link>
 
                 </div>
                 <div className="bg-[#25D366] flex flex-row w-max items-center justify-center rounded-lg p-2 text-white hover:bg-[#25FF77] cursor-pointer mb-3 md:mb-0 ">
