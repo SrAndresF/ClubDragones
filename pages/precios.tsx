@@ -65,7 +65,7 @@ export default function precios({products}:{products:any}){
           </div>
         </div>
         <div>
-          <ul className=" lg:mb-0 md:sm:mb-44 ml-7 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
+          <ul className=" lg:mb-0 md:sm:mb-44 ml-0 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
             {products.map((c:any)=>(
               <Link href={`/shop/${c.data.title.toLowerCase().replace(/\s/g, "-")}`} key={c.data.title}  >
               <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.data.title} >
@@ -102,21 +102,21 @@ export default function precios({products}:{products:any}){
           </div>
         </motion.div>
 
-        <motion.div className=" ml-7 md:ml-0 bg-white w-full h-128 sm:h-60 text-black flex justify-around flex-col-reverse sm:flex-row items-center"
+        <motion.div className=" ml-0 md:ml-0 bg-white w-full h-128 sm:h-60 text-black flex justify-around flex-col-reverse sm:flex-row items-center"
         initial={{y: -300}}
         animate={{y:0}}
         transition={{duration: 0.5}}>
-        <div className="text-start w-full sm:w-1/3  sm:mx-0 sm:mr-20">
+        <div className="text-start w-full sm:w-1/3 ">
           <h2 className=" font-semibold  text-2xl">Realiza tus pagos aquí!!!</h2>
-          <p className=" text-md sm:ml-0 ml-5">Otras formas de pagar tú mensualidad.</p>
-          <ul className=" list-disc text-start ml-5 sm:ml-0 mb-3">
+          <p className=" text-md sm:ml-0 ml-0">Otras formas de pagar tú mensualidad.</p>
+          <ul className=" list-disc text-start ml-0 sm:ml-0 mb-3">
             <li>De manera fisica, acercandote a uno de los profes.</li>
             <li>Via daviplata, Davivienda o nequi.</li>
           </ul> 
           <Link href="/pagos" ><a className="font-medium  text-lg  bg-secondary px-6 py-2 rounded-lg text-white">Pagar</a></Link>
           </div>
-          <div className="rounded-full sm:ml-20 mt-10">
-          <Image className="rounded-full object-cover -ml-7" alt="cortesiaAlusion" src="/img/cortesia.png" width={260} height={260} layout="intrinsic" />
+          <div className="rounded-full ml-0 sm:ml-20 mt-10">
+          <Image className="rounded-full object-cover " alt="cortesiaAlusion" src="/img/cortesia.png" width={260} height={260} layout="intrinsic" />
           </div>
         </motion.div>
     </MainDinamyc >

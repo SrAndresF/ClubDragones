@@ -49,7 +49,7 @@ const Home : NextPage = () => {
       </ul>
       <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
       </div>
-      <div className=" -mt-32 md:-mt-0 relative md:absolute ml-3 sm:ml-3 md:ml-0   sm:top-full top-full md:top-full lg:top-full-2 sm:right-0 bg-principal rounded-full w-96 h-96  md:w-96 md:h-96 lg:w-128 lg:h-128 -z-10">
+      <div className=" -mt-20 md:-mt-0 relative md:absolute ml-3 sm:ml-3 md:ml-0   sm:top-full top-full md:top-full lg:top-full-2 sm:right-0 bg-principal rounded-full w-72 h-72  md:w-96 md:h-96 lg:w-128 lg:h-128 -z-10">
         <div className="absolute right-20 sm:right-0 md:right-20 top-28 lg:-rotate-6  z-0">
         <motion.img
         initial={{x:-300}}
@@ -74,7 +74,7 @@ const Home : NextPage = () => {
       
       <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
       </div>
-      <div className="flex md:ml-20  md:w-1/3 lg:w-1/2 bg-principal  h-screen -mt-128 sm:-mt-0">
+      <div className="flex md:ml-20  md:w-1/3 lg:w-1/2 bg-principal  h-screen -mt-80 md:-mt-0">
         <div className="flex flex-row flex-flow justify-center items-center">
         <div className="absolute right-24 md:right-96 mb-128 ">
             <Image src="/img/integraciones/banner.png" width={500/4} height={500/4} alt="banner1" layout="intrinsic" />
@@ -82,7 +82,7 @@ const Home : NextPage = () => {
           <div className="absolute right-5 md:right-10">
             <Image className="rounded-full object-cover" src="/img/integraciones/integraciones1.png" width={500/3} height={500/3} alt="integraciones 1" layout="intrinsic" />
           </div>
-          <div className="absolute right-44 md:right-20 mb-full-2 md:mb-banner  rotate-180">
+          <div className="absolute right-44 md:right-20 mb-128 sm:mb-full-2 md:mb-banner  rotate-180">
             <Image src="/img/integraciones/banner.png" width={500/4} height={500/4} alt="banner1" layout="intrinsic" />
           </div>
           <div className="absolute  md:right-60 sm:right-128 sm:-ml-10">
