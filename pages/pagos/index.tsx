@@ -23,9 +23,6 @@ export default function Pagos({payments}:{payments: any}) {
   }
   const validator = (value: any) =>{
     const formatDate = value.fechaDeNacimiento.substr(8,8) + "/" + value.fechaDeNacimiento.substr(5,2) + "/" + value.fechaDeNacimiento.substr(0,4)
-    console.log(formatDate)
-    console.log(payments?.find((e: any)=>(e.cc.toString() === value.cc && e.fechaDeNacimiento === formatDate && e.pagoInscripcion === "x")))
-    console.log(payments?.find((e: any)=>(e.cc.toString() === value.cc && e.fechaDeNacimiento === value.date)))
     if(payments?.find((e: any)=>(e.cc.toString() === value.cc && e.fechaDeNacimiento === formatDate && e.pagoInscripcion === "x"))){
       return setView(true)
     }else{
