@@ -14,7 +14,6 @@ import MoonLoader from "react-spinners/MoonLoader";
 import { BarLoader } from "react-spinners";
 
 export default function Admin({products}:{products:any}) {
-  
   const [loading, setLoading] = useState<boolean>(false);
   const [title, setTitle] = useState<string | null>(null);
   const [description, setDescription] = useState<string | null >(null);
@@ -33,10 +32,11 @@ export default function Admin({products}:{products:any}) {
   }
   const handleDelete = async (id:string) => {
     try {
-    await axios.delete(`${server}api/products/${id}`) 
+    await axios.delete(`${server}/api/products/${id}`) 
     }
     catch(err){
       setError(true)
+      console.log(err)
     }
     changeState()
   }
@@ -44,7 +44,7 @@ export default function Admin({products}:{products:any}) {
     e.preventDefault()
     changeState()
     try {
-      await axios.post(`${server}api/products`,{
+      await axios.post(`${server}/api/products`,{
         title,
         description,
         price,
@@ -54,6 +54,7 @@ export default function Admin({products}:{products:any}) {
     }
     catch(err){
       setError(true)
+      console.log(err)
 
     }
   }

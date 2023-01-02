@@ -17,7 +17,7 @@ const Home : NextPage = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}>
       <Slider>
-        <div className=" sm:ml-20 ml-7  mt-24">
+        <div className="  ml-7  mt-10 sm:ml-20 sm:mt-24 ">
           <motion.h2 
           initial={{x:300}}
           animate={{x:0}}
@@ -28,7 +28,7 @@ const Home : NextPage = () => {
           animate={{x:0}}
           transition={{duration:0.5}}
           className="text-white font-light text-lg mt-3">La primera clase es 100% gratis, además <br /> contamos con 2 sedes así que, no <br /> esperes más e inscríbete</motion.p>
-          <Link href="/contacto"><a className="bg-secondary w-36 h-14 md:w-44 md:h-14 rounded-lg md:rounded-2xl mt-3 mb-20 hover:translate-x-2 hover:translate-y-2 hover:bg-opacity-90 text-lg justify-center items-center text-center flex text-white font-light">¡Inscribete Aquí!</a></Link>
+          <Link href="/contacto"><a className="bg-secondary w-36 h-14 md:w-44 md:h-14 rounded-lg md:rounded-2xl mt-3  hover:translate-x-2 hover:translate-y-2 hover:bg-opacity-90 text-lg justify-center items-center text-center flex text-white font-light">¡Inscribete Aquí!</a></Link>
         </div>
         </Slider>
         </motion.div>
