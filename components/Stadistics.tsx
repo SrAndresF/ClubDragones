@@ -1,6 +1,7 @@
+import GoogleAnalytics from "./GoogleAnalitycs";
 
 export default function Stadistics() {
   return (
-    <div>Stadistics</div>
+    <GoogleAnalytics measurementId=""  />
   )
 }

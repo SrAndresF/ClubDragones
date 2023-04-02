@@ -28,9 +28,9 @@ export default function AcercaDe(){
         <div className="text-center w-full sm:w-1/3  sm:mx-0 sm:mr-20">
           <h2 className=" font-semibold text-2xl">Camilo Montaño</h2>
           <p className=" text-md sm:mx-0 mx-3">Juan Camilo Montaño Trochez
-          Llevo 8 años siendo jugador activo del club donde comenzó mi formación deportiva
+          <b> Llevo 8 años siendo jugador activo del club</b> donde comenzó mi formación deportiva
           Estudio licenciatura en idiomas
-          Y busco complementar mi amor por el deporte y la enseñanza con mi carrera profesional.</p>
+          Y busco <b>complementar mi amor por el deporte y la enseñanza</b> con mi carrera profesional.</p>
           </div>
           <div className="rounded-full sm:ml-20 mt-10">
           <Image className="rounded-full object-cover" alt="Profesor montaño" src="/img/profesores/montaño.jpg" width={260} height={260} layout="intrinsic" />
@@ -48,7 +48,7 @@ export default function AcercaDe(){
           <div className="text-center w-full sm:w-1/3 sm:mx-0 sm:mr-20">
           <h2 className=" font-semibold text-2xl">Juan Camilo Sinisterra</h2>
           <p className=" text-md mx-3 sm:mx-0">Juan Camilo Sinisterra Sanclemente
-            Soy parte del club desde hace 7 años, pero el deporte y el basket a estado en mi vida desde que tengo memoria, estudio diseño industrial. Enseñar es algo que disfruto y llevo en la sangre, todavía más con mi amor por el Basketball.</p>
+            Soy parte del <b>club</b> desde hace 7 años, pero el deporte y el basket a estado en mi vida desde que tengo memoria, estudio diseño industrial. <b>Enseñar es algo que disfruto</b> y llevo en la sangre, <b>todavía más con mi amor por el Basketball</b>.</p>
           </div>
         </motion.div>
 
@@ -56,10 +56,10 @@ export default function AcercaDe(){
         initial={{x: 300}}
         animate={{x:0}}
         transition={{duration: 0.5}}>
-        <div className="text-center w-full sm:w-1/3 sm:mx-0 sm:mr-20">
+        <div className="text-center w-full sm:w-1/3 sm:mx-0 sm:mr-20 mb-3">
           <h2 className=" font-semibold text-2xl">Juan Camilo Sinisterra</h2>
-          <p className=" text-md sm:mx-0 mx-3 ">Juan Camilo Sinisterra Sanclemente
-            Soy parte del club desde hace 7 años, pero el deporte y el basket a estado en mi vida desde que tengo memoria, estudio diseño industrial. Enseñar es algo que disfruto y llevo en la sangre, todavía más con mi amor por el Basketball.</p>
+          <p className=" text-md sm:mx-0 mx-3 ">Juan Camilo Sinisterra Sanclemente 
+           <b> Soy parte del club desde hace 7 años</b>, pero el deporte y el basket a estado en mi vida desde que tengo memoria, estudio diseño industrial. <b>Enseñar es algo que disfruto</b> y llevo en la sangre, <b>todavía más con mi amor por el Basketball</b>.</p>
           </div>
           <div className="rounded-full sm:ml-20 mt-10">
           <Image className="rounded-full " alt="Profesor sinisterra" src="/img/profesores/sinisterra.png" width={292} height={292} layout="intrinsic" />
@@ -76,7 +76,7 @@ export default function AcercaDe(){
           </div>
           <div className="text-center w-full sm:w-1/3 sm:mx-0 sm:mr-20">
           <h2 className=" font-semibold text-2xl">Danilo Rojas</h2>
-          <p className=" text-md mx-3 sm:mx-0">Danilo Rojas Valencia soy parte de dragones hace 3 años juego baloncesto desde la infancia y a estado presente en mi familia toda la vida, estudio enfermería y busco poder aportar más al deporte enseñando lo que he aprendido y aprender yo aun mas.</p>
+          <p className=" text-md mx-3 sm:mx-0">Danilo Rojas Valencia <b>soy parte de dragones hace 3 años</b> juego baloncesto desde la infancia y a estado presente en mi familia toda la vida, estudio enfermería y <b>busco poder aportar más al deporte enseñando lo que he aprendido y aprender yo aun mas</b>.</p>
           </div>
         </motion.div>
         
@@ -85,7 +85,7 @@ export default function AcercaDe(){
       <div className="flex  flex-col sm:flex-row justify-start sm:mt-0 mt-20 ">
       <div className="flex flex-col justify-start sm:justify-center items-start sm:mb-20 sm:mr-32 sm:mt-44">
       <h3 className="ml-7 font-bold text-3xl lg:text-7xl sm:ml-20 mb-4">Misión</h3>
-      <p className="sm:ml-20 mb-4 ml-7">Ser líderes de formación deportiva y en información <br />  del ser de cada uno de nuestros deportistas, dando <br />  herramientas útiles para la vida, siendo parte activa <br /> de su formación e incentivando a la práctica del <br /> deporte.
+      <p className="sm:ml-20 mb-4 ml-7"><b>Ser líderes de formación deportiva</b> y en información <br />  del ser de cada uno de nuestros deportistas, dando <br />  herramientas útiles para la vida, <b>siendo parte activa <br /> de su formación e incentivando a la práctica del <br /> deporte</b>.
       </p>
         <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
       <div className="flex ml-7 md:ml-0 sm:absolute sm:right-0 flex-col  md:lg:w-96 md:h-96 bg-principal rounded-full md:mt-0 mt-24 w-72 h-72 ">
@@ -106,7 +106,7 @@ export default function AcercaDe(){
       
        >
       <h3 className="ml-7 font-bold text-3xl lg:text-7xl sm:ml-20 mb-4">Visión</h3>
-      <p className="sm:ml-20 mb-4 ml-7 sm:w-96">Para el año 2024 seremos un club con alto  reconocimiento a nivel nacional y con un desarrollo integral.
+      <p className="sm:ml-20 mb-4 ml-7 sm:w-96"><b>Para el año 2024 seremos un club con alto reconocimiento a nivel nacional</b> y con un desarrollo integral.
       </p>
       
       <Link href="/contacto"><a className="text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
@@ -133,7 +133,7 @@ export default function AcercaDe(){
           <div className="flex flex-col  relative -top-10 sm:-top-20 ">
             
           <h3 className="ml-7 font-bold text-3xl lg:text-7xl md:ml-28 mb-4">Historia</h3>
-          <p className="md:ml-28 mb-4 ml-7 w-50 sm:w-1/3  mr-2">El club dragones de Baloncesto cali fue fundado en el año 2003 por Andres  Gonzales, es un joven Guarapireño que en  ese entonces era un jugador de la liga vallecaucana de  baloncesto. Con la idea de ayudar a los niños de  la zona a  utilizar mejor su tiempo  libre, el club fue dando sus primeros  pasos sin saber el gran impacto que tendría en la ciudad de cali.
+          <p className="md:ml-28 mb-4 ml-7 w-50 sm:w-1/3  mr-2">El club dragones de Baloncesto cali <b>fue fundado en el año 2003 por Andres  Gonzales</b>, es un joven Guarapireño que en  ese entonces era un <b>jugador de la liga vallecaucana de  baloncesto</b>. Con la idea de <b>ayudar a los niños de  la zona a  utilizar mejor su tiempo  libre</b>, el club fue dando sus primeros  pasos sin saber el gran impacto que tendría en la ciudad de Cali.
           </p>
           <Link href="/contacto"><a className=" absolute right-80 -top-7 text-white text-center text-normal bg-secondary px-10 py-2 rounded-lg sm:ml-20 hover:bg-opacity-80 ml-7">Comenzar</a></Link>
           

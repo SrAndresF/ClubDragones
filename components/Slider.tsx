@@ -1,6 +1,5 @@
-import { Zoom } from "react-slideshow-image"
+import { Zoom} from "react-slideshow-image"
 import 'react-slideshow-image/dist/styles.css'
-import Image from "next/image";
 export default function Slider({children}:{children:any}) {
   const images = [
     "/img/banner1.jpg",
@@ -10,17 +9,19 @@ export default function Slider({children}:{children:any}) {
     
   ]
   const zoomProperties = {
-		scale: 1.2,
+		scale: 0.4,
 		duration: 3000,
 		transitionDuration: 500,
 		infinite: true,
+    arrows: false,
+    indicators: false,
   };
   return (
           <Zoom {...zoomProperties}>
       {images.map((each, index) => (
         <div key={index} className="flex h-128 md:h-3/4 lg:h-2/3 w-full flex-wrap" >
           <img
-            alt="banner imagen"
+            alt="Imagen presentación"
             className=" shadow-xl w-full md:h-full lg:h-banner lg:object-cover object-cover "
             src={each} />
             <div className=" absolute">{children}</div>
