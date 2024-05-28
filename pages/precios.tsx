@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Suspense } from 'react'
 import dynamic from "next/dynamic";
 import {BiMap} from 'react-icons/bi'
-import { loadProducts } from "../lib/loadProducts";
 import { GetStaticProps } from "next";
 
 const MainDinamyc = dynamic(()=> import('../components/layout/Main'),{ 
@@ -12,7 +11,15 @@ const MainDinamyc = dynamic(()=> import('../components/layout/Main'),{
   });
 
   
-export default function precios({products}:{products:any}){
+export default function precios(){
+  const products = [{
+    id: 1,
+    title: "title"
+    
+  },{
+    id: 2,
+    title: "title"
+  }]
   return (
     <Suspense fallback={<div className="flex justify-center items-center min-h-screen "><h2 className=" absolute  text-3xl font-semibold">Por favor espere.....</h2><div className=" animate-spin">
     <div className=" scroll-smooth inline-block w-44 h-44 m-4 rounded-full bg-ball animate-ping "></div><div className=" scroll-smooth inline-block w-44 h-44 m-4 rounded-full bg-ball animate-ping "></div></div><div className=" scroll-smooth inline-block w-44 h-44 m-4 rounded-full bg-ball animate-ping "></div></div>} >
@@ -67,14 +74,14 @@ export default function precios({products}:{products:any}){
         <div>
           <ul className=" lg:mb-0 md:sm:mb-44 ml-5 mt-36 lg:ml-20 grid md:lg:grid-cols-3 grid-cols-1  md:lg:grid-rows-2 sm:grid-cols-2 grid-flow-row md:gap-10 sm:gap-5 lg:gap-20 ">
             {products.map((c:any)=>(
-              <Link href={`/shop/${c.data.title.toLowerCase().replace(/\s/g, "-")}`} key={c.data.title}  >
-              <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.data.title} >
+              <Link href={`/shop/${c.title.toLowerCase().replace(/\s/g, "-")}`} key={c.title}  >
+              <li className="mb-10 sm:mb-0 cursor-pointer text-white flex flex-col justify-center items-center text-center flex-flow bg-secondary bg-opacity-50 rounded-lg hover:translate-x-1 hover:translate-y-1  w-max" key={c.title} >
                 <div>
-                  <img src={`${c.data.img}`} width={150 * 2} height={110 * 2}  alt={`${c.title}`} />
+                  <img src={`${c.img}`} width={150 * 2} height={110 * 2}  alt={`${c.title}`} />
                 </div>
-                <h2 className=" text-base font-semibold" >{c.data.title}</h2>
-                <p className=" text-base" >{c.data.description}</p>
-                <p className=" text-base font-semibold" >valor: co${c.data.price}</p>
+                <h2 className=" text-base font-semibold" >{c.title}</h2>
+                <p className=" text-base" >{c.description}</p>
+                <p className=" text-base font-semibold" >valor: co${c.price}</p>
               </li>
               </Link> 
               ))}
@@ -124,12 +131,5 @@ export default function precios({products}:{products:any}){
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const products = await loadProducts()
-  return {
-    props: {
-      products,
-    }, 
-  }
-}
+
 

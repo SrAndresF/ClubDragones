@@ -1,7 +1,6 @@
 import Main from "../components/layout/Main";
 import {BiMap} from 'react-icons/bi'
 import Link from "next/link";
-import { server } from "../config";
 
 export default function contacto() {
   return (
@@ -36,7 +35,7 @@ export default function contacto() {
         <textarea name="Descripción"  placeholder="Descripcion" className=" w-72 h-44 text-center rounded-2xl outline-none bg-gray-200  placeholder-gray-600 " ></textarea>
         <button className="bg-secondary  rounded-2xl text-center font-medium h-10 w-72 text-lg mt-5 mb-7 text-white hover:bg-opacity-80 ">Enviar</button>
 
-        <input type="hidden" name="_next" value={`${server}contacto`} />
+        <input type="hidden" name="_next" value={`contacto`} />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_subject" value="Dragones-Pregunta Pagina Web!!" />
         <input type="text" name="_honey" style={{'display':'none'}} />

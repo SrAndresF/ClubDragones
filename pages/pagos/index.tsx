@@ -12,7 +12,14 @@ type FormValues = {
   cc: string;
   fechaDeNacimiento: string;
 }
-export default function Pagos({payments}:{payments: any}) {
+export default function Pagos() {
+
+  const payments: any = [{
+    title: "title"
+    
+  },{
+    title: "title"
+  }]
 
   const {register, handleSubmit, formState:{errors}} = useForm<FormValues>()
   const [view, setView] = useState<boolean>(false)
@@ -78,12 +85,5 @@ export default function Pagos({payments}:{payments: any}) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const payments = await loadPayments()
-  return {
-    props: {
-      payments: payments.dragonesBaseDeDatos,
-    }, 
-  }
-}
+
 
